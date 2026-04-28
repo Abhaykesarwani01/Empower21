@@ -21,11 +21,11 @@ export function Testimonials() {
   ];
 
   const logos = [
-    { name: 'Google', width: 120 },
-    { name: 'IBM', width: 80 },
-    { name: 'Microsoft', width: 140 },
-    { name: 'Accenture', width: 140 },
-    { name: 'Goldman Sachs', width: 150 }
+    { name: 'HDFC', width: 120 },
+    { name: 'AXIS', width: 80 },
+    { name: 'BANDHAN', width: 140 },
+    // { name: 'Accenture', width: 140 },
+    // { name: 'Goldman Sachs', width: 150 }
   ];
 
   return (

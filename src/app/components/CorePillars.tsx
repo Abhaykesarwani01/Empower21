@@ -1,5 +1,8 @@
 import { TrendingUp, Users, Briefcase, ArrowRight } from 'lucide-react';
 import { motion } from 'motion/react';
+import img1 from "../../imports/1.png";
+import img2 from "../../imports/2.png";
+import img3 from "../../imports/3.png";
 
 export function CorePillars() {
   const pillars = [
@@ -8,21 +11,21 @@ export function CorePillars() {
       title: 'Personal Assistance',
       description: 'Receive dedicated personal assistance tailored to your career. From administrative support to banking culture, we provide comprehensive services to streamline your professional and personal life.',
       link: 'Learn More',
-      image: 'https://images.unsplash.com/photo-1766218337264-f41883f217e4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwzfHx3ZWFsdGglMjBtYW5hZ2VtZW50JTIwZmluYW5jZSUyMGludmVzdG1lbnR8ZW58MXx8fHwxNzc3MzE5MTg4fDA&ixlib=rb-4.1.0&q=80&w=1080'
+      image: img1
     },
     {
       icon: Users,
       title: 'Expert Career Strategy',
       description: 'Book a 1-on-1, personalized career strategy session with industry veterans at absolutely no cost. Navigate your career path with clarity.',
       link: 'Schedule Session',
-      image: 'https://images.unsplash.com/photo-1758519288969-4806f015852d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjYXJlZXIlMjBjb25zdWx0YXRpb24lMjBtZWV0aW5nJTIwcHJvZmVzc2lvbmFsfGVufDF8fHx8MTc3NzMxOTE4OXww&ixlib=rb-4.1.0&q=80&w=1080'
+      image: img2
     },
     {
       icon: Briefcase,
       title: '100% Placement Assurance',
       description: 'We don\'t just guide you; we guarantee your success. Benefit from proactive networking and guaranteed placement with top corporate partners.',
       link: 'Learn More',
-      image: 'https://images.unsplash.com/photo-1758518731706-be5d5230e5a5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHw1fHxwcm9mZXNzaW9uYWwlMjBidXNpbmVzcyUyMHN1Y2Nlc3MlMjBjb3Jwb3JhdGV8ZW58MXx8fHwxNzc3MzE5MTg4fDA&ixlib=rb-4.1.0&q=80&w=1080'
+      image: img3
     }
   ];
 

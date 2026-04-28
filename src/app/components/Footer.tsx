@@ -14,7 +14,7 @@ export function Footer() {
               Building Tomorrow's Leaders.
             </p>
             <p className="text-gray-400 leading-relaxed">
-              Empowering professionals with exclusive wealth management services and guaranteed career placement opportunities. Your success is our commitment.
+              Empowering professionals with exclusive banking consultation services and guaranteed career placement opportunities. Your success is our commitment.
             </p>
           </div>
 

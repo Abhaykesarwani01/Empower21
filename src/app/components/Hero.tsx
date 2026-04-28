@@ -1,5 +1,6 @@
 import { ArrowRight } from 'lucide-react';
 import { motion } from 'motion/react';
+import heroImage from "../../imports/hero.png";
 
 export function Hero() {
   return (
@@ -20,12 +21,16 @@ export function Hero() {
               Exclusive private banking solutions paired with free expert career consultancy and guaranteed job placement. Build your future with confidence.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <button className="px-8 py-4 bg-amber-500 text-slate-900 rounded-lg hover:bg-amber-400 transition flex items-center justify-center gap-2 group font-semibold">
-                Upload Your Resume
-                <ArrowRight className="group-hover:translate-x-1 transition" size={20} />
-              </button>
-              <button className="px-8 py-4 bg-transparent text-amber-400 border-2 border-amber-500 rounded-lg hover:bg-amber-500 hover:text-slate-900 transition font-semibold">
-                Explore Private Banking
+              <a href="https://forms.gle/Ftyviqg9JophPeor6" target="_blank" rel="noopener noreferrer">
+                <button className="px-8 py-4 bg-amber-500 text-slate-900 rounded-lg hover:bg-amber-400 transition flex items-center justify-center gap-2 group font-semibold">
+                  Upload Your Resume
+                  <ArrowRight className="group-hover:translate-x-1 transition" size={20} />
+                </button>
+              </a>
+              <button onClick={() => {
+                  document.getElementById('career-hub')?.scrollIntoView({ behavior: 'smooth' });
+                }} className="px-8 py-4 bg-transparent text-amber-400 border-2 border-amber-500 rounded-lg hover:bg-amber-500 hover:text-slate-900 transition font-semibold">
+                Book a Consultation
               </button>
             </div>
           </motion.div>
@@ -36,9 +41,9 @@ export function Hero() {
             transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
           >
             <img
-              src="https://images.unsplash.com/photo-1758518729240-7162d07427b8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHw0fHxwcm9mZXNzaW9uYWwlMjBidXNpbmVzcyUyMHN1Y2Nlc3MlMjBjb3Jwb3JhdGV8ZW58MXx8fHwxNzc3MzE5MTg4fDA&ixlib=rb-4.1.0&q=80&w=1080"
+              src={heroImage}
               alt="Professional business meeting"
-              className="rounded-2xl shadow-2xl border-4 border-amber-500/20"
+              className="rounded-2xl"
             />
           </motion.div>
         </div>
