@@ -1,13 +1,20 @@
 import { Menu, X } from 'lucide-react';
 import { useState } from 'react';
 import logo from '../../imports/image.png';
+import { motion } from 'motion/react';
 
 export function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
     <nav className="fixed top-0 left-0 right-0 bg-slate-900/95 backdrop-blur-sm z-50 border-b border-slate-800">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <motion.div
+        className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
+        initial={{ opacity: 0, y: 0 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: false, margin: "-50px" }}
+        transition={{ duration: 0.4, ease: "easeOut" }}
+      >
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center gap-3">
             <img src={logo} alt="Empower21 Logo" className="h-10" />
@@ -43,11 +50,16 @@ export function Navigation() {
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
         </div>
-      </div>
+      </motion.div>
 
       {/* Mobile Navigation */}
       {isMenuOpen && (
-        <div className="md:hidden border-t border-slate-800 bg-slate-900">
+        <motion.div
+          className="md:hidden border-t border-slate-800 bg-slate-900"
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.25, ease: "easeOut" }}
+        >
           <div className="px-4 py-4 space-y-3">
             <a href="#home" className="block text-gray-300 hover:text-amber-400">
               Home
@@ -65,7 +77,7 @@ export function Navigation() {
               About Us
             </a>
           </div>
-        </div>
+        </motion.div>
       )}
     </nav>
   );

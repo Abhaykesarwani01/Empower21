@@ -36,7 +36,7 @@ export function CorePillars() {
           className="text-center mb-16"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
+          viewport={{ once: false, margin: "-100px" }}
           transition={{ duration: 0.6, ease: "easeOut" }}
         >
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
@@ -53,7 +53,7 @@ export function CorePillars() {
                 className="bg-white rounded-2xl border border-gray-200 overflow-hidden hover:shadow-xl transition group"
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-100px" }}
+                viewport={{ once: false, margin: "-100px" }}
                 transition={{ duration: 0.6, delay: index * 0.1, ease: "easeOut" }}
               >
                 <div className="aspect-video overflow-hidden">

@@ -1,10 +1,23 @@
 import { Mail, Phone, Linkedin, Twitter, Instagram } from 'lucide-react';
+import { motion } from 'motion/react';
 
 export function Footer() {
   return (
     <footer id="about" className="bg-gray-900 text-gray-300 pt-16 pb-8 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto">
-        <div className="grid md:grid-cols-4 gap-12 mb-12">
+      <motion.div
+        className="max-w-7xl mx-auto"
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: false, amount: 0.2 }}
+        transition={{ duration: 0.7, ease: "easeOut" }}
+      >
+        <motion.div
+          className="grid md:grid-cols-4 gap-12 mb-12"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: false, amount: 0.2 }}
+          transition={{ duration: 0.6, delay: 0.1, ease: "easeOut" }}
+        >
           {/* Brand */}
           <div className="md:col-span-2">
             <h3 className="text-2xl font-semibold text-amber-400 mb-3">
@@ -92,13 +105,19 @@ export function Footer() {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
 
         {/* Bottom bar */}
-        <div className="border-t border-gray-800 pt-8 text-center text-gray-500">
+        <motion.div
+          className="border-t border-gray-800 pt-8 text-center text-gray-500"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: false, amount: 0.2 }}
+          transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
+        >
           <p>© 2026 Empower21. All rights reserved.</p>
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
     </footer>
   );
 }

@@ -35,7 +35,7 @@ export function Testimonials() {
           className="text-center mb-16"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
+          viewport={{ once: false, margin: "-100px" }}
           transition={{ duration: 0.6, ease: "easeOut" }}
         >
           <h2 className="text-4xl font-bold text-gray-900 mb-12">
@@ -66,7 +66,7 @@ export function Testimonials() {
               className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-100px" }}
+              viewport={{ once: false, margin: "-100px" }}
               transition={{ duration: 0.6, delay: index * 0.1, ease: "easeOut" }}
             >
               <Quote className="text-amber-500 mb-6" size={40} />

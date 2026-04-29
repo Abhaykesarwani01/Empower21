@@ -9,7 +9,7 @@ export function CareerHub() {
           className="text-center mb-16"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
+          viewport={{ once: false, margin: "-100px" }}
           transition={{ duration: 0.6, ease: "easeOut" }}
         >
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
@@ -22,7 +22,7 @@ export function CareerHub() {
           className="bg-slate-900 rounded-2xl p-10 shadow-lg border border-amber-500/20"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
+          viewport={{ once: false, margin: "-100px" }}
           transition={{ duration: 0.6, ease: "easeOut" }}
         >
           <div className="w-16 h-16 bg-amber-500/20 rounded-xl flex items-center justify-center mb-6">
