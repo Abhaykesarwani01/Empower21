@@ -5,18 +5,18 @@ export function Testimonials() {
   const testimonials = [
     {
       quote: "The strategic advice I received was instrumental in securing my new role. The resume optimization alone made a huge difference.",
-      author: "Elizabeth C.",
-      role: "Operations Executive"
+      author: "Abhishek Rohatgi",
+      role: ""
     },
     {
       quote: "Their network connections and interview prep made the process seamless. Highly recommend the placement assurance program!",
-      author: "Michael K.",
-      role: "Finance Director"
+      author: "Madhura Patkar",
+      role: ""
     },
     {
       quote: "Exceptional experience from the free consultancy to the final job offer. The private banking perks are a massive bonus.",
-      author: "David L.",
-      role: "Software Architect"
+      author: "Shreya Nagar",
+      role: ""
     }
   ];
 

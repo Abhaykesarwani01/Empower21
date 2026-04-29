@@ -57,13 +57,13 @@ export function Footer() {
               <li className="flex items-center gap-2">
                 <Mail size={18} className="text-amber-400" />
                 <a href="mailto:contact@empower.com" className="hover:text-white transition">
-                  contact@empower.com
+                  ravish@empower21.in
                 </a>
               </li>
               <li className="flex items-center gap-2">
                 <Phone size={18} className="text-amber-400" />
                 <a href="tel:+1234567890" className="hover:text-white transition">
-                  +1 (234) 567-8900
+                  +91 88872 96928
                 </a>
               </li>
             </ul>
@@ -84,7 +84,7 @@ export function Footer() {
                   <Twitter size={20} />
                 </a>
                 <a
-                  href="#"
+                  href="https://www.instagram.com/empower.021?igsh=d2E5NHN1ODdwdXU="
                   className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-amber-500 hover:text-slate-900 transition"
                 >
                   <Instagram size={20} />
