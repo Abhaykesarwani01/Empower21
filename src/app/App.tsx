@@ -15,7 +15,7 @@ export default function App() {
       <CorePillars />
       <CareerHub />
       <AssuranceProcess />
-      <Testimonials />
+      {/* <Testimonials /> */}
       <ImportantNotice />
       <Footer />
     </div>

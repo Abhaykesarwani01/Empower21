@@ -38,7 +38,7 @@ export function Hero() {
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
             <h1 className="text-5xl lg:text-6xl font-bold text-white leading-tight">
-              Elevate Your Wealth.<br />
+              Elevate Your Knowledge.<br />
               <span className="text-amber-400">Accelerate Your Career.</span>
             </h1>
             <p className="text-xl text-gray-300 leading-relaxed">
